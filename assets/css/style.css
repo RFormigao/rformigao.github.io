@@ -744,6 +744,19 @@ a {
       height: 5px;
       margin: 10px auto;
       background-color: currentColor; }
+  .projects,
+  .contact .contact_background {
+    padding: 40px 10%; }
+  .projects .projects_description,
+  .school .school_description,
+  .contact .contact_description {
+    margin: 20px 0; }
+  .about {
+    width: 80%;
+    margin: 40px auto 0; }
+  .school {
+    width: 80%;
+    margin: 40px auto; }
   .content .content_container h1 {
     font-size: 40px; }
   .content .content_container p {
@@ -763,18 +776,5 @@ a {
     width: 95%; } }
 
 @media only screen and (max-width: 320px) {
-  .projects,
-  .contact .contact_background {
-    padding: 40px 10%; }
-  .projects .projects_description,
-  .school .school_description,
-  .contact .contact_description {
-    margin: 20px 0; }
-  .about {
-    width: 80%;
-    margin: 40px auto 0; }
-  .school {
-    width: 80%;
-    margin: 40px auto; }
   .contact .contact_content .contact_content-form {
     width: 93%; } }
