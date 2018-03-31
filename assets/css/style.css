@@ -773,7 +773,9 @@ a {
   .school .school_content .school_content-map {
     height: 150px; }
   .contact .contact_content .contact_content-form {
-    width: 95%; } }
+    width: 95%; }
+  .footer {
+    font-size: 12px; } }
 
 @media only screen and (max-width: 320px) {
   .contact .contact_content .contact_content-form {
