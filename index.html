@@ -5,20 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
   <title>Robson Formigão</title>
+  <meta property="og:locale" content="pt_BR">
+  <meta name="robots" content="index, follow">
+  <meta property="og:url" content="http://201.55.33.89/si/2015/0200831521026/">
+  <meta property="og:title" content="Robson Formigão - Desenvolvedor web">
+  <meta property="og:site_name" content="RFormigao">
+  <meta property="og:description" content="Me chamo Robson Formigão, sou desenvolvedor web e neste site você pode encontrar um pouco mais sobre mim, como meus projetos e minha carreira acadêmica .">
+  <meta property="og:image" content="http://201.55.33.89/si/2015/0200831521026/robson.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="600">
+  <meta property="og:type" content="website">
 </head>
 <body>
 
-  <header class="header">
+  <header id="home" class="header">
     <div class="header_background">
       <nav class="nav">
-        <ul class="nav_container">
-          <li class="nav_items"><a href="">Home</a></li>
-          <li class="nav_items"><a href="">Sobre</a></li>
-          <li class="nav_items"><a href="">Projetos</a></li>
-          <li class="nav_items"><a href="">Faculdade</a></li>
-          <li class="nav_items"><a href="">Contato</a></li>
+        <i data-menu="buttonMenu" class="fas fa-bars button_menu"></i>
+        <ul data-menu="navMobile" class="nav_container">
+          <li class="nav_items"><a data-menu="linkMenu" href="#home">Home</a></li>
+          <li class="nav_items"><a data-menu="linkMenu" href="#about">Sobre</a></li>
+          <li class="nav_items"><a data-menu="linkMenu" href="#projects">Projetos</a></li>
+          <li class="nav_items"><a data-menu="linkMenu" href="#school">Faculdade</a></li>
+          <li class="nav_items"><a data-menu="linkMenu" href="#contact">Contato</a></li>
         </ul>
       </nav>
       <div class="content">
@@ -39,16 +53,29 @@
   </header>
 
   <main class="main">
-    <section class="about">
-      <h1 class="about_title">Quem sou eu?</h1>
+    <section  id="about" class="about">
+      <h1 class="about_title">Robson Formigão</h1>
       <div class="about_content">
         <div class="about_content-text">
           <p>
-            Me chamo Robson Formigão, bom passei por muitas escolas, mas conclui meu Ensino Médio na ETEC de Jahu, onde também sou formado em Técnico em Informática, uma área que me fascina.
-          </p>
-          <p>
-            O que prende minha atenção também é o futebol, mas especificamente o Corinthians, time pelo qual sou fanático e não perco uma partida! Gosto também de jogos onlines, principalmente os FPS e RPG. Faço o tipo de ficar mais em casa ou me reunir com os amigos para uma boa jogatina. Ingressei na FATEC-JAHU no segundo semestre de 2015 para cursar Sistemas para Internet.
-          </p>
+            Quem sou? como o titulo acima já informa me chamo  <strong>Robson Formigão</strong>,
+            bom ingressei na <strong>FATEC-JAHU</strong> no segundo semestre de 2015 para cursar
+            <strong>Sistemas para Internet</strong>.
+            Hoje atuo como <strong>desenvolvedor web</strong>, sempre procurando adquirir e compartilhar conhecimento,
+            buscando escrever codigos limpos e otimizados.
+            <strong>Habilidades até o presente momento: </strong>
+            <div class="content_text-skills">
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+              </ul>
+              <ul>
+                <li>PHP (Lumen)</li>
+                <li>Mysql</li>
+              </ul>
+            </div>
+            </p>
         </div>
         <figure class="about_content-photo">
           <img src="assets/img/perfil.jpg" alt="" srcset="">
@@ -56,54 +83,66 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
       <header>
         <h1 class="projects_title">
           Projetos
         </h1>
         <div class="projects_description">
-          <p>Me chamo Robson Formigão, bom passei por muitas escolas, mas conclui meu Ensino Médio na ETEC de Jahu, onde também sou formado em Técnico em Informática, uma área que me fascina. </p>
+          <p>
+            Nessa sessão você encontra alguns dos projetos desenvolvidos ao decorrer do curso
+            e alguns trabalhos pessoais. Você pode visitar o meu <strong> <a href="https://github.com/RFormigao" target="_blank"> GITIHUB (RFORMIGAO) </a></strong> e encontrar além desses,
+            outros projetos que já desenvolvi.
+          </p>
         </div>
       </header>
       <div class="projects_content">
-        <a class="projects_background estacione" href="">
+        <a class="projects_background estacione" href="https://github.com/RFormigao/estacione-aqui" target="_blank">
           <div class="projects_item ">
             <h2 class="project_item-title">Estacione aqui</h2>
             <p class="project_item-description">
-              Projeto desenvolvido no 5° semestre da faculdade e bla bla bla bla bla. Projeto desenvolvido no 5° semestre da faculdade e bla bla bla bla bla...
+              Esse projeto foi desenvolvido no 4° semestre da faculdade, sua função é gerenciar
+              a entrada e saida de veiculos de um estacionamento, o site foi desenvolvido em <strong> PHP </strong>
+              seguindo o <strong>padrão MVC</strong>
             </p>
             <button class="button button_project">
               Ver Projeto
             </button>
           </div>
         </a>
-        <a class="projects_background aerocris" href="">
+        <a class="projects_background aerocris" href="https://github.com/jaquepaschoal/aerocrissite" target="_blank">
           <div class="projects_item ">
             <h2 class="project_item-title">Aerocris</h2>
             <p class="project_item-description">
-              Projeto desenvolvido no 5° semestre da faculdade e bla bla bla bla bla. Projeto desenvolvido no 5° semestre da faculdade e bla bla bla bla bla...
+                O website da empresa Aerocris foi desenvolvido em um <strong>Hackathoon na Fatec de JAHU </strong>.  Nele
+                os participantes deveriam entregar um <strong>site em Wordpress em dois dias</strong>.
+                A ideia deste site é passar aos usuários uma ideia de segurança e qualidade dos produtos, além de permitir uma aproximação melhor com a empresa.
             </p>
             <button class="button button_project">
               Ver Projeto
             </button>
           </div>
         </a>
-        <a class="projects_background myspot" href="">
+        <a class="projects_background myspot" href="https://github.com/RFormigao/my-spot" target="_blank">
           <div class="projects_item ">
             <h2 class="project_item-title">My spot</h2>
             <p class="project_item-description">
-              Projeto desenvolvido no 5° semestre da faculdade e bla bla bla bla bla. Projeto desenvolvido no 5° semestre da faculdade e bla bla bla bla bla...
+              Projeto desenvolvido no 5° semestre, este projeto tem a finalidade de armezar seus lugares favoritos, atraves de um campo
+              de busca os usuarios podem pesquisar endereços e adiciona-los para uma consulta no futuro.
+              O projeto foi desenvolvido em <strong>PHP seguindo o padrão MVC.</strong>
             </p>
             <button class="button button_project">
               Ver Projeto
             </button>
           </div>
         </a>
-        <a class="projects_background browser" href="">
+        <a class="projects_background browser" href="https://github.com/RFormigao/browser-name" target="_blank">
           <div class="projects_item ">
             <h2 class="project_item-title">Browser Name</h2>
             <p class="project_item-description">
-              Projeto desenvolvido no 5° semestre da faculdade e bla bla bla bla bla. Projeto desenvolvido no 5° semestre da faculdade e bla bla bla bla bla...
+              Browser Name foi codificado em Javascript, tem como função identificar o nome e versão do navegador.
+              Tambem é possivel adicionar uma classe css para especificar como um elemento deve se comportar em
+              diversos navegadores.
             </p>
             <button class="button button_project">
               Ver Projeto
@@ -114,13 +153,17 @@
       </div>
     </section>
 
-    <section class="school">
+    <section id="school" class="school">
       <header>
         <h1 class="school_title">
           Faculdade
         </h1>
         <div class="school_description">
-          <p>Me chamo Robson Formigão, bom passei por muitas escolas, mas conclui meu Ensino Médio na ETEC de Jahu, onde também sou formado em Técnico em Informática, uma área que me fascina. </p>
+          <p>
+              A Faculdade de Tecnologia de Jahu – FATEC-JAHU é uma Instituição Pública de Ensino Superior
+              que oferece cursos de graduação para formação de Tecnólogos,
+              visando atender segmentos atuais e emergentes da atividade econômica.
+          </p>
         </div>
       </header>
       <div class="school_content">
@@ -129,14 +172,16 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="contact_background">
         <header>
           <h1 class="contact_title">
             Contato
           </h1>
           <div class="contact_description">
-            <p>Me chamo Robson Formigão, bom passei por muitas escolas, mas conclui meu Ensino Médio na ETEC de Jahu, onde também sou formado em Técnico em Informática, uma área que me fascina. </p>
+            <p>Ficou com alguma duvida? é estudante da Fatec Jahu ou outra faculdade e precisa de ajuda? Fique a vontade
+              para me enviar uma mensagem pelo formulario ou me adicionar nas redes sociais. Obrigado pela visita.
+            </p>
           </div>
         </header>
         <div class="contact_content">
@@ -156,34 +201,34 @@
 
             <button class="button button_contact">Enviar</button>
           </form>
-          <!-- <div class="contact_content-info">
-
-              <div class="content_info-social">
-                <ul>
-                  <li><i class="fab fa-facebook-square"></i></li>
-                  <li><i class="fab fa-instagram"></i></li>
-                  <li><i class="fab fa-github-square"></i></li>
-                  <li><i class="fab fa-codepen"></i></li>
-                  <li><i class="fab fa-linkedin"></i></li>
-                </ul>
-              </div>
-            <div class="content_info-card">
-              Lorem dadada
-            </div>
-            AIzaSyAQ9MQVhOXUuCCIUVtPUhYucxDOcqE4T3Q
-          </div> -->
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p> Robson Formigão - Todos os direitos Reservados</p>
+    <p> 2018 © Robson Formigão Todos os direitos reservados </p>
   </footer>
 
-  <script src="assets/js/scripts.min.js"></script>
+  <script src="assets/js/menu.min.js"></script>
+  <script src="assets/js/maps.min.js"></script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ9MQVhOXUuCCIUVtPUhYucxDOcqE4T3Q&callback=initMap">
   </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Robson Formigão",
+      "url": "http://201.55.33.89/si/2015/0200831521026/",
+      "sameAs": [
+        "https://www.facebook.com/RFormigaoGomes",
+        "https://www.instagram.com/rformigao/",
+        "https://www.linkedin.com/in/rformigaogomes/",
+        "https://github.com/RFormigao"
+      ]
+    }
+    </script>
 </body>
 </html>
